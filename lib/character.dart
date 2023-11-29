@@ -1,17 +1,8 @@
 class Character {
-  String characterName = "";
-  String characteryType = "";
-  String characterDescripition = "";
-  String namePhoto = "";
+  final String cn; // Character name
+  final String ct; // Character type
+  final String cd; // Character description
+  final String nph; // Character image path
 
-  Character(
-      {required String cn,
-      required String ct,
-      required String cd,
-      required String nph}) {
-    characterName = cn;
-    characteryType = ct;
-    characterDescripition = cd;
-    namePhoto = nph;
-  }
+  Character({required this.cn, required this.ct, required this.cd, required this.nph});
 }

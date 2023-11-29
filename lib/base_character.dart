@@ -1,31 +1,38 @@
 import 'character.dart';
 
 class BaseCharacter {
-  List<Character> listaCharacters = [
+  static final List<Character> _listaCharacters = [
     Character(
-        cn: "Mac",
+        cn: "Jack",
         ct: "Jugador",
-        cd: "Mac es un trailero que tiene el sueño de conocer todas las rutas del continente americano.",
-        nph: "player.png"),
+        cd: "Jack es un trailero que tiene el sueño de conocer todas las rutas del continente americano.",
+        nph: "images/player.png"),
     Character(
-        cn: "Enemigo1",
+        cn: "Guardian Corrupto",
         ct: "Enemigo",
         cd: "Es un guardián del bosque no muy amigable",
-        nph: "enemigo1.png"),
+        nph: "images/guardianC.png"),
     Character(
         cn: "Taraspine",
         ct: "Enemigo",
         cd: "Se trata de un guardián del bosque bastante violento",
-        nph: "taraspine.png"),
+        nph: "images/taraspine.png"),
     Character(
         cn: "Kike",
         ct: "NPC",
         cd: "Kike es un trailero cuya sensatez es cuestionable. Se quedó varado hace un tiempo, y nunca intentó salir del bosque",
-        nph: "kike.png"),
+        nph: "images/kike.png"),
     Character(
-        cn: "Capri",
+        cn: "Eustaquio",
         ct: "NPC",
         cd: "Este agradable ser es un guardián del bosque que escoge el diálogo en lugar de la violencia",
-        nph: "player.png")
+        nph: "images/cabra.png"),
+    Character(
+        cn: "Jefe Del bosque",
+        ct: "Enemigo",
+        cd: "Este guardián fue designado para proteger, pero sucumbió ante la maldad.",
+        nph: 'images/Jefe.png'),
   ];
+
+  static List<Character> get listaCharacters => _listaCharacters;
 }
