@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:furesta_app/pagina_inicio.dart';
-import 'card_character.dart';
 
 main() => runApp(Furesta());
 
